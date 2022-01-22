@@ -1,0 +1,4 @@
+name: EXM.homework.2.1
+version: '${version}'
+main: com.joo31775
+api-version: 1.18
