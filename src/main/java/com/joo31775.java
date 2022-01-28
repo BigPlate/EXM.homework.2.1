@@ -1,17 +1,25 @@
 package com;
 
+
 import org.bukkit.plugin.java.JavaPlugin;
+
+
 
 public final class joo31775 extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
 
-    }
+        First fun = new First();
+        fun.first();
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
+        Second fun2 = new Second();
+        fun2.second();
+
+        Third fun3 = new Third();
+        fun3.setting();
+
+        Third fun4 = new Third();
+
     }
 }
