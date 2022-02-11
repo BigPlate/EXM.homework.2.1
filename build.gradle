@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.joo31775'
-version = '1.2'
+version = '1.2a'
 
 repositories {
     mavenCentral()

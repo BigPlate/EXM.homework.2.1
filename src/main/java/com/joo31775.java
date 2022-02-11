@@ -12,24 +12,21 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
-public final class joo31775 extends JavaPlugin implements Listener {
-    @Override
-    public void onEnable() {
-        getLogger().info("server started.");
-    }
-    First ban1 = new First();
+public final class joo31775 extends JavaPlugin {
+    first_class fc = new first_class();
+    public static first_class instance;
+    public static first_class getInstance() { return instance; }
 
 }
 
-
-class First extends JavaPlugin{
+class first_class extends JavaPlugin{
     public void onEnable() {
         getLogger().warning("Hello, World!");
     }
 }
 
 
-class Second extends JavaPlugin {
+class second_class extends JavaPlugin {
     public void onEnable() {
         World world = getServer().getWorld("world");
         world.setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
@@ -37,7 +34,7 @@ class Second extends JavaPlugin {
 }
 
 
-class Third extends JavaPlugin implements Listener {
+class third_class extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         Bukkit.getServer().getPluginManager().registerEvents(this, this); // using listener
@@ -48,5 +45,3 @@ class Third extends JavaPlugin implements Listener {
         event.getPlayer().sendActionBar(Component.text("Welcome",(NamedTextColor.BLUE)));
     }
 }
-
-
