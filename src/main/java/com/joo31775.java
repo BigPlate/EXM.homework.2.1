@@ -10,16 +10,23 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 
 
+
 public class joo31775 extends JavaPlugin implements Listener {
 
     public void onEnable() {
         getLogger().warning("Server started");
 
-        testing test = new testing();
+        getLogger().info("a"); // check point 1
+
+        testing test = new testing(); // An error occurred that starts from here.
         test.onEnable();
+
+        getLogger().info("b"); // check point 2
 
         first_class_one aaaa = new first_class_one();
         aaaa.onEnable();
+
+        getLogger().info("c"); // check point 3
     }
 
     @EventHandler
@@ -30,7 +37,7 @@ public class joo31775 extends JavaPlugin implements Listener {
 }
 
 class testing extends JavaPlugin {
-    public void onEnable(){
+    public void onEnable() {
         getLogger().warning("Hello!");
     }
 }
