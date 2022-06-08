@@ -16,7 +16,7 @@ public class joo31775 extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        getLogger().warning("Server started.");
+        getLogger().warning("Server started prefectly.");
 
         first_function first = new first_function(this);
         first.onEnable();
