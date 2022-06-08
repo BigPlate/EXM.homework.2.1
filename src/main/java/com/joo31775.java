@@ -4,7 +4,6 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.GameRule;
 import org.bukkit.World;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
 
@@ -26,8 +25,7 @@ public class joo31775 extends JavaPlugin implements Listener {
         second.onEnable();
 
         third_function third = new third_function(this);
-        third.onEnable();
-        third.onPlayerJoin(null); // I know this here is wrong, but save now.
+        getServer().getPluginManager().registerEvents(third, this);
 
     }
 }
@@ -67,6 +65,7 @@ class third_function implements Listener {
     third_function(joo31775 plugin) {
         this.plugin = plugin;
     }
+    Listener third_listener = (this);
 
     void onEnable() {
         this.plugin.getServer().getPluginManager().registerEvents(this, plugin);
