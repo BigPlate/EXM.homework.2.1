@@ -1,5 +1,5 @@
 package com;
-/// test push
+/// test push2
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.GameRule;
