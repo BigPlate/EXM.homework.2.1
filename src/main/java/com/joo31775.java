@@ -62,7 +62,7 @@ class third_method implements Listener {
     @EventHandler
     void onPlayerJoin(PlayerJoinEvent event) {
         event.getPlayer().sendActionBar(Component.text("Welcome",(NamedTextColor.BLUE)));
-        //getLogger().warning("player joined.");
+        // getLogger().warning("player joined.");
     }
 
 
