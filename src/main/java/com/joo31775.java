@@ -28,12 +28,9 @@ public class joo31775 extends JavaPlugin implements Listener {
 
         third_method tm = new third_method();
         getServer().getPluginManager().registerEvents(tm, this);
-        // tm.hellomessage();
-
 
     }
-
-
+    
 }
 
 class first_method implements Listener {
@@ -64,6 +61,5 @@ class third_method implements Listener {
         event.getPlayer().sendActionBar(Component.text("Welcome",(NamedTextColor.BLUE)));
         // getLogger().warning("player joined.");
     }
-
 
 }
