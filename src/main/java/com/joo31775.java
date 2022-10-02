@@ -41,7 +41,7 @@ class first_method implements Listener {
     private final joo31775 plugin = null;
 
     void helloworld() {
-        getLogger().warning("Hello, world!");
+        getLogger().warning("Hello, World!");
     }
 
 }
@@ -53,7 +53,7 @@ class second_method implements Listener {
     void gameruleset() {
         World world = getServer().getWorld("world");
         world.setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
-        getLogger().warning("gamerule set.");
+        // getLogger().warning("gamerule set.");
     }
 }
 
@@ -62,7 +62,7 @@ class third_method implements Listener {
     @EventHandler
     void onPlayerJoin(PlayerJoinEvent event) {
         event.getPlayer().sendActionBar(Component.text("Welcome",(NamedTextColor.BLUE)));
-        //getLogger().warning("player joined.");
+        // getLogger().warning("player joined.");
     }
 
 
