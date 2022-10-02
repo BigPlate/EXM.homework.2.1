@@ -41,7 +41,7 @@ class first_method implements Listener {
     private final joo31775 plugin = null;
 
     void helloworld() {
-        getLogger().warning("Server started!");
+        getLogger().warning("Hello, World!");
     }
 
 }
