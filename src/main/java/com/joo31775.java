@@ -50,7 +50,7 @@ class second_method implements Listener {
     void gameruleset() {
         World world = getServer().getWorld("world");
         world.setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
-        // getLogger().warning("gamerule set.");
+
     }
 }
 
@@ -59,7 +59,7 @@ class third_method implements Listener {
     @EventHandler
     void onPlayerJoin(PlayerJoinEvent event) {
         event.getPlayer().sendActionBar(Component.text("Welcome",(NamedTextColor.BLUE)));
-        // getLogger().warning("player joined.");
+
     }
 
 }
