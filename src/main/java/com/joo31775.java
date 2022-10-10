@@ -28,12 +28,9 @@ public class joo31775 extends JavaPlugin implements Listener {
 
         third_method tm = new third_method();
         getServer().getPluginManager().registerEvents(tm, this);
-        // tm.hellomessage();
-
 
     }
-
-
+    
 }
 
 class first_method implements Listener {
@@ -53,7 +50,7 @@ class second_method implements Listener {
     void gameruleset() {
         World world = getServer().getWorld("world");
         world.setGameRule(GameRule.DO_DAYLIGHT_CYCLE, false);
-        // getLogger().warning("gamerule set.");
+
     }
 }
 
@@ -62,8 +59,7 @@ class third_method implements Listener {
     @EventHandler
     void onPlayerJoin(PlayerJoinEvent event) {
         event.getPlayer().sendActionBar(Component.text("Welcome",(NamedTextColor.BLUE)));
-        // getLogger().warning("player joined.");
-    }
 
+    }
 
 }
