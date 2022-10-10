@@ -1,8 +1,5 @@
 package com;
 
-import org.bukkit.event.Listener;
-import org.bukkit.plugin.java.JavaPlugin;
-// nice?
 
 public class joo31775 extends JavaPlugin implements Listener {
 
